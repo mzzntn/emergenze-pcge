@@ -2,15 +2,17 @@
 
 Next documentation is in Italian because the system has been developed for an Italian public administration.
 
+
 ## Author
 
 [Gter srl](http://www.gter.it) - +39 010 - 0899150
+
 
 ## Introduzione
 
 ![alt text](dashboard.png)
 
-Da alcuni anni la Protezione Civile del Comune di Genova ha deciso di dotarsi di un proprio sistema informativo per la gestione delle emergenze. In questo contesto, l’informazione territoriale gioca un ruolo fondamentale. Si tratta du un applicativo web che permette la condivisione delle informazioni fra i vari soggetti sia interni al Comune che esterni (volontari di protezione civile, aziende municipalizzate, VVF, Regione, etc) coinvolti a vario titolo nella gestione delle emergenze e quindi di supportare le operazioni di gestione e mitigazione del rischio. Tale sistema, inizialmente realizzato dal Comune di Genova con risorse interne quale replica di altri sistemi informativi in dotazione all’Ente è stato recentemente completamente rinnovato grazie a dei finanziamenti PON Metro 2014-2020. Il nuovo sistema, realizzato da [Gter srl](http://www.gter.it) , oltre ad aver subito un importante restyling grafico che, a detta degli operatori di protezione civile, ha permesso di incrementarne sostanzialmente l’usabilità, ha ora al centro l’aspetto territoriale. Ogni segnalazione e/o intervento svolto è infatti georeferenziato grazie al collegamento con la toponomastica comunale. Questo nuovo approccio permette di avere in ogni istante un quadro preciso di quanto sta avvenendo sul territorio e pertanto di ottimizzare la gestione delle poche risorse a disposizione. Collegato alle banche dati territoriali, non solo alla toponomastica, ma anche all’anagrafe, e ai principali elementi a rischio (rii, sottopassi etc), il sistema permette di gestire e registrare interventi puntuali quali sgomberi o interdizioni all’accesso in maniera sicura ed efficiente.
+Da alcuni anni la Protezione Civile del Comune di Genova ha deciso di dotarsi di un proprio sistema informativo per la gestione delle emergenze. In questo contesto, l’informazione territoriale gioca un ruolo fondamentale. Si tratta di un applicativo web che permette la condivisione delle informazioni fra i vari soggetti sia interni al Comune che esterni (volontari di protezione civile, aziende municipalizzate, VVF, Regione, etc) coinvolti a vario titolo nella gestione delle emergenze e quindi di supportare le operazioni di gestione e mitigazione del rischio. Tale sistema, inizialmente realizzato dal Comune di Genova con risorse interne quale replica di altri sistemi informativi in dotazione all’Ente è stato recentemente completamente rinnovato grazie a dei finanziamenti PON Metro 2014-2020. Il nuovo sistema, realizzato da [Gter srl](http://www.gter.it), oltre ad aver subito un importante restyling grafico che, a detta degli operatori di protezione civile, ha permesso di incrementarne sostanzialmente l’usabilità, ha ora al centro l’aspetto territoriale. Ogni segnalazione e/o intervento svolto è infatti georeferenziato grazie al collegamento con la toponomastica comunale. Questo nuovo approccio permette di avere in ogni istante un quadro preciso di quanto sta avvenendo sul territorio e pertanto di ottimizzare la gestione delle poche risorse a disposizione. Collegato alle banche dati territoriali, non solo alla toponomastica, ma anche all’anagrafe, e ai principali elementi a rischio (rii, sottopassi, etc), il sistema permette di gestire e registrare interventi puntuali quali sgomberi o interdizioni all’accesso in maniera sicura ed efficiente.
 
 
 ## Tecnologie
@@ -32,8 +34,6 @@ Le principali cartelle usate dal repository sono
 * altre cartelle (data, js, less): eredità del tema bootstrap utilizzato
 
 
-
-
 ## Dipendenze
 Ci sono alcune librerie che sono state aggiunte come dipendenze. Si tratta di altri repository github che sono direttamente caricati dentro il repo:
 
@@ -44,7 +44,6 @@ Con il comando ```git submodule```  si aggiunge il repository:
 ```
 git submodule add https://github.com/wenzhixin/bootstrap-table.git vendor/bootstrap-table
 ```
-
 
 Quindi si può aggiornare ad una specifica versione il submodule per aggiornare il repository (analogo del comando push).
 
@@ -59,7 +58,6 @@ Per "scaricare" l'aggiornamento ai submodules sul proprio server è possibile fa
 ```
 git submodule sync
 ```
-
 
 Le dipendenze (al 2020-05-29) sono:
 
@@ -87,7 +85,6 @@ Con pip3 (python package installer) sono stati installati i seguenti moduli nece
 Il DB è PostgreSQL con estensione spaziale PostGIS (v 2.5). Una copia del DB vuota sarà aggiunta al repository quanto prima.
 
 
-
 ## Il bot telegram 
 La configurazione principale del bot telegram avviene nella cartella pages/eventi laddove deve essere incluso il file config.py che ha il seguente contenuto:
 
@@ -109,6 +106,7 @@ In fase di installazione occorre eseguire i seguenti passaggi da root:
 - `update-rc.d avvio_bot.sh defaults`
 
 I bot si possono creare e gestire tramite BotFather
+
 
 ## API del Comune di Genova utilizzate
 In questo momento il sistema usa le API del comune di Genova usate per interazione con altri servizi. In questo momento per interagire con il *SW Manutenzioni*. 
@@ -174,8 +172,6 @@ git push origin vX.X.X
 Il progetto è stabile al netto di continue migliorie e bug detection che sono possibili attraverso l'uso dell'ambiente in produzione presso la Protezione Civile del Comune di Genova
 
 
-
-
 ## Copyleft and License
 
 This web page was developed starting from [Start Bootstrap](http://startbootstrap.com/) - [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
@@ -189,7 +185,6 @@ Start Bootstrap was created by and is maintained by **[David Miller](http://davi
 * https://github.com/davidtmiller
 
 Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
 
 [Gter srl](http://wwww.gter.it) change the license to GPL v.3 (see license file attached)
 
